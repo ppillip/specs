@@ -1,9 +1,9 @@
 4 Architecture
 ==============
 
-`libp2p` was designed around the Unix Philosophy of creating small components that are easy to understand and test. `libp2p`는 이해하기 쉽고 테스트가 쉬운 작은 구성 요소를 만드는 유닉스 철학을 중심으로 설계되었습니다. These components should also be able to be swapped in order to accommodate different technologies or scenarios and also make it feasible to upgrade them over time.이러한 구성 요소는 다른 기술이나 시나리오를 수용하기 위해 교체 할 수 있어야하며 시간이 지나면 업그레이드 할 수도 있습니다.
+`libp2p` was designed around the Unix Philosophy of creating small components that are easy to understand and test. `libp2p``는 이해하기 쉽고 테스트가 쉬운 작은 구성 요소를 만드는 유닉스 철학을 중심으로 설계되었습니다`.These components should also be able to be swapped in order to accommodate different technologies or scenarios and also make it feasible to upgrade them over time.`이러한 구성 요소는 다른 기술이나 시나리오를 수용하기 위해 교체 할 수 있어야하며 시간이 지나면 업그레이드 할 수도 있습니다.`
 
-Although different peers can support different protocols depending on their capabilities 다른 피어가 기능에 따라 다른 프로토콜을 지원할 수 있지만 , any peer can act as a dialer and/or a listener for connections from other peers, connections that once established can be reused from both ends, removing the distinction between clients and servers. 모든 피어는 다른 피어의 연결에 대한 다이얼러 및/또는 수신기로 작동 할 수 있습니다. 한 번 설정된 연결은 양 끝에서 재사용 할 수 있으므로 클라이언트와 서버의 구분을 제거합니다.
+Although different peers can support different protocols depending on their capabilities `다른 피어가 기능에 따라 다른 프로토콜을 지원할 수 있지만` , any peer can act as a dialer and/or a listener for connections from other peers, connections that once established can be reused from both ends, removing the distinction between clients and servers. `모든 피어는 다른 피어의 연결에 대한 다이얼러 및/또는 수신기로 작동 할 수 있습니다. 한 번 설정된 연결은 양 끝에서 재사용 할 수 있으므로 클라이언트와 서버의 구분을 제거합니다.`
 
 The `libp2p` interface acts as a thin veneer over a multitude of subsystems that are required in order for peers to be able to communicate. These subsystems are allowed to be built on top of other subsystems as long as they respect the standardized interface. The main areas where these subsystems fit are:
 
